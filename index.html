@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> أذكار الصباح والمساء </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Oswald:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400;600&family=Tilt+Prism&family=Work+Sans:ital,wght@0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h2> 🕌   مسلم</h2>
+                <div class="nav">
+                    <ul>
+                      <li><a href="clock.html">الوقت  </a></li>
+                      <li><a href="prayertime.html">مواقيت الصلاة</a></li>
+                      <li><a href="index.html"> أذكار الصباح والمساء</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mycontent" id="azkaar">
+                <h2>أذكار الصباح والمساء</h2>
+                <ul id="azkaarList">
+                </ul>
+            </div>
+          
+        </div>
+    </div>
+
+   <script>
+    let url = 'https://www.hisnmuslim.com/api/ar/27.json';
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+      })
+      .then((serverResponse) => {
+        let azkaarList = document.getElementById('azkaarList');
+        for (let i = 0; i < serverResponse["أذكار الصباح والمساء"].length; i++) {
+          let text = serverResponse["أذكار الصباح والمساء"][i]["ARABIC_TEXT"];
+          let audio = serverResponse["أذكار الصباح والمساء"][i]["AUDIO"];
+          let listItem = document.createElement('li');
+          listItem.innerHTML = `<p>${text}</p><audio src="${audio}" controls></audio>`;
+          azkaarList.appendChild(listItem);
+        }
+      });
+   </script>
+</body>
+</html>

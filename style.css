@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    direction: rtl;
+    background-image: url(./images/Cultural\ Night\ Tour.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(52, 2, 79);
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    background-color:rgba(0, 0, 0, 0.416);
+    width: 82%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 0.9rem wheat;
+    font-family: 'Cairo', sans-serif; 
+    position: relative;
+    padding: 30px;
+}
+.content h2{
+    text-align: center;
+    font-size: 33px;
+    color: wheat;
+    text-shadow: 0 0 1rem wheat;
+    padding: 0 10px;
+}
+.content .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(249, 181, 181, 0.337);
+    border-radius:10px ;
+    box-shadow: 0 0 1rem wheat;
+}
+
+.content .header ul {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.content .header ul li {
+     padding: 0 5px;
+ }
+    .content .header ul li a{
+    transition: 0.6s;
+    color: wheat;
+    padding: 10px;
+}
+.content .header ul li a:hover {
+     color: black;
+     background-color: wheat;
+     border-radius: 10px;
+     cursor: pointer;    
+}  
+.content .header ul{
+    list-style: none;
+}
+.body{
+    background-color: rgba(240, 255, 255, 0.605);
+    padding: 10px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    line-height: 100px;
+    text-align: center;
+    text-shadow:  0 0 0.1rem black;
+    border-radius: 10px 10px;
+}
+/*prayer times------------------------------*/
+ul{
+    list-style: none;
+}
+
+.mycontent ul{
+    text-align: center;
+}
+.mycontent li:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+.mycontent h2{
+    color: black;
+    font-size: 19px;
+    border-bottom: 1px solid;
+}
+
+.mycontent ul li{
+    transition: 1s;
+    background-color: rgba(240, 255, 255, 0.605);
+    padding: 0 30px;
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+.date{
+    background-color: rgba(240, 255, 255, 0.407);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+ 
+#azkaar h2{
+    margin-top: 10px;
+    color: wheat;
+    font-size: 50px;
+}
+
+ 
+/*medai query ------------------------------------------------------------*/
+ @media (max-width:767px) {
+    .container{
+        padding-left:0px;
+        padding-right:0px;
+        padding-top: 0px;
+    }
+    #canvas{
+            width: 330px;
+            position: relative;
+            transform: translate(90px, 215px);
+          }
+
+.content{
+    height: 100vh;
+    width: 100%;
+}
+.content h2{
+    font-size: 21px;
+    padding: 11px 0px;
+}
+.content .header ul li {
+    padding: 10px 40px;
+    font-size: 18px;
+}
+.content .header{
+    background-color: rgba(99, 6, 6, 0.416);
+    justify-content: center;
+}
+.content .header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   audio {
+    width: 100%;
+    /* Add more styles as needed */
+  }
+   
+#azkaar h2{
+    margin-top: 124px;
+     
+    font-size: 60px;
+}
+}
+
+ 

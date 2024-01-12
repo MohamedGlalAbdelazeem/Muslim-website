@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  مواقيت الصلاة  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Oswald:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400;600&family=Tilt+Prism&family=Work+Sans:ital,wght@0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h2> 🕌   مسلم</h2>
+                <div class="nav">
+                    <ul>
+                        <li><a href="clock.html">الوقت  </a></li>
+                        <li><a href="prayertime.html">مواقيت الصلاة</a></li>
+                        <li><a href="index.html"> أذكار الصباح والمساء</a></li>
+                    </ul>
+                </div>
+            </div>
+   <div>
+    <label for="city" style="color: wheat;margin-left: 10px; margin-top: 30px;"   >اختار اسم المدينة : </label>
+    <select id="city" style="width: 160px; text-align: center;height: 35px; background-color: wheat;font-size: 16px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 50px;">
+        <option value="Assuit,Egypt">Assuit</option>
+        <option value="Cairo,Egypt">Cairo</option>
+        <option value="Alexandria,Egypt">Alexandria</option>
+        <option value="Aswan,Egypt">Aswan</option>
+        <option value="Luxor,Egypt">Luxor</option>
+        <option value="Port Said,Egypt">Port Said</option>
+        <option value="Suez,Egypt">Suez</option>
+        <option value="Mansoura,Egypt">Mansoura</option>
+        <option value="Tanta,Egypt">Tanta</option>
+        <option value="Asyut,Egypt">Asyut</option>
+        <option value="Fayyum,Egypt">Fayyum</option>
+        <option value="Beni Suef,Egypt">Beni Suef</option>
+        <option value="Ismailia,Egypt">Ismailia</option>
+        <option value="Minya,Egypt">Minya</option>
+        <option value="Qena,Egypt">Qena</option>
+        <option value="Sohag,Egypt">Sohag</option>
+        <option value="Hurghada,Egypt">Hurghada</option>
+        <option value="Sharm El Sheikh,Egypt">Sharm El Sheikh</option>
+        <option value="Marsa Matruh,Egypt">Marsa Matruh</option>
+        <option value="El Alamein,Egypt">El Alamein</option>
+        <option value="Dahab,Egypt">Dahab</option>
+        <option value="Nuweiba,Egypt">Nuweiba</option>
+        <option value="El Gouna,Egypt">El Gouna</option>
+        <option value="Siwa,Egypt">Siwa</option>
+        <option value="Mersa Alam,Egypt">Mersa Alam</option>
+        <option value="Mansoura,Egypt">Mansoura</option>
+        <option value="El Mahalla El Kubra,Egypt">El Mahalla El Kubra</option>
+        <option value="Kafr El Sheikh,Egypt">Kafr El Sheikh</option>
+        <option value="Banha,Egypt">Banha</option>
+        <option value="Damietta,Egypt">Damietta</option>
+        <option value="Shibin El Kom,Egypt">Shibin El Kom</option>
+        <option value="Bani Mazar,Egypt">Bani Mazar</option>
+        <option value="Desouk,Egypt">Desouk</option>
+        <option value="Mallawi,Egypt">Mallawi</option>
+        <option value="Kafr El Dawar,Egypt">Kafr El Dawar</option>
+        <option value="Samalut,Egypt">Samalut</option>
+        <option value="Disuq,Egypt">Disuq</option>
+        <option value="Abu Kabir,Egypt">Abu Kabir</option>
+        <option value="Zagazig,Egypt">Zagazig</option>
+        <option value="Akhmim,Egypt">Akhmim</option>
+        <option value="Tala,Egypt">Tala</option>
+        <option value="Qasr El Eini,Egypt">Qasr El Eini</option>
+        <option value="Bilbays,Egypt">Bilbays</option>
+        <option value="Mit Ghamr,Egypt">Mit Ghamr</option>
+        <option value="Manfalut,Egypt">Manfalut</option>
+        <option value="Khusus,Egypt">Khusus</option>
+        <option value="Kafr Saqr,Egypt">Kafr Saqr</option>
+        <option value="Dikirnis,Egypt">Dikirnis</option>
+        <option value="Ibsheway,Egypt">Ibsheway</option>
+        <option value="Zefta,Egypt">Zefta</option>
+        <option value="Tamiya,Egypt">Tamiya</option>
+        <option value="Qutur,Egypt">Qutur</option>
+        <option value="El Wasity,Egypt">El Wasity</option>
+        <option value="Al Badari,Egypt">Al Badari</option>
+        <option value="Daraw,Egypt">Daraw</option>
+        <option value="Sirs El Layan,Egypt">Sirs El Layan</option>
+        <option value="Awlad Saqr,Egypt">Awlad Saqr</option>
+        <option value="Al Hamul,Egypt">Al Hamul</option>
+        <option value="Abnub,Egypt">Abnub</option>
+        <option value="Al Hamam,Egypt">Al Hamam</option>
+        <option value="Qift,Egypt">Qift</option>
+        <option value="El Bagour,Egypt">El Bagour</option>
+        <option value="Baltim,Egypt">Baltim</option>
+        <option value="El Fashn,Egypt">El Fashn</option>
+        <option value="Kawm Umbu,Egypt">Kawm Umbu</option>
+        <option value="Qalyub,Egypt">Qalyub</option>
+        <option value="Dayrut,Egypt">Dayrut</option>
+        <option value="Tanta,Egypt">Tanta</option>
+        <option value="El-Qusiya,Egypt">El-Qusiya</option>
+        <option value="Al Qurayn,Egypt">Al Qurayn</option>
+        <option value="Damanhur,Egypt">Damanhur</option>
+        <option value="Kafr El Zayyat,Egypt">Kafr El Zayyat</option>
+        <option value="Isna,Egypt">Isna</option>
+        <option value="Girga,Egypt">Girga</option>
+        <option value="Farshut,Egypt">Farshut</option>
+        <option value="Safaga,Egypt">Safaga</option>
+        <option value="Al Qusayr,Egypt">Al Qusayr</option>
+        <option value="Qena,Egypt">Qena</option>
+        <option value="Jirja,Egypt">Jirja</option>
+        <option value="Qasala,Egypt">Qasala</option>
+        <option value="Izbat Al Burj,Egypt">Izbat Al Burj</option>
+        <option value="Al Manshah,Egypt">Al Manshah</option>
+        <option value="El-Dabaa,Egypt">El-Dabaa</option>
+        <option value="Hihya,Egypt">Hihya</option>
+        <option value="Al Mansurah,Egypt">Al Mansurah</option>
+        <option value="Khan Yunis,Egypt">Khan Yunis</option>
+        <option value="Matariyah,Egypt">Matariyah</option>
+        <option value="Dairut,Egypt">Dairut</option>
+        <option value="Ash Shuhada,Egypt">Ash Shuhada</option>
+        <option value="Mallawi,Egypt">Mallawi</option>
+        <option value="Ash Shalatin,Egypt">Ash Shalatin</option>
+        <option value="Abu Tij,Egypt">Abu Tij</option>
+        <option value="Tall al Kebir,Egypt">Tall al Kebir</option>
+        <option value="Basyun,Egypt">Basyun</option>
+        <option value="Badr,Egypt">Badr</option>
+        <option value="Hawsh Isa,Egypt">Hawsh Isa</option>
+        <option value="Naja' Hammadi,Egypt">Naja' Hammadi</option>
+        <option value="Al Uqsur,Egypt">Al Uqsur</option>
+        <option value="Arish,Egypt">Arish</option>
+        <option value="Bani Mazar,Egypt">Bani Mazar</option>
+        <option value="Al Arish,Egypt">Al Arish</option>
+        <option value="Minya,Egypt">Minya</option>
+        <option value="El Qoseir,Egypt">El Qoseir</option>
+        <option value="Asyut,Egypt">Asyut</option>
+        <option value="Banha,Egypt">Banha</option>
+        <option value="Aswan,Egypt">Aswan</option>
+        <option value="El Mahalla El Kubra,Egypt">El Mahalla El Kubra</option>
+        <option value="El Mansoura,Egypt">El Mansoura</option>
+        <option value="El Giza,Egypt">El Giza</option>
+        <option value="Cairo,Egypt">Cairo</option>
+        <option value="Alexandria,Egypt">Alexandria</option>
+        <option value="Tanta,Egypt">Tanta</option>
+        <option value="Luxor,Egypt">Luxor</option>
+        <option value="Port Said,Egypt">Port Said</option>
+        <option value="Suez,Egypt">Suez</option>
+    </select>
+
+<div id="date" style="text-align: center;"></div>
+<div id="prayerTimes" style="margin:0 auto; text-align: center; padding: 10px; border-radius: 2px; width: fit-content;  color:black; background-color: rgba(245, 222, 179, 0.55);" ></div>
+   </div>
+
+<script>
+ 
+ function fetchPrayerTimes(city) {
+  const [selectedCity, selectedCountry] = city.split(",");
+  const url = `https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=${selectedCountry}`;
+  fetch(url)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Failed to fetch prayer times');
+      }
+    })
+    .then((serverResponse) => {
+      const prayerTimes = serverResponse.data.timings;
+      const currentDate = new Date();
+      const currentTime = currentDate.toLocaleTimeString('en-US');
+      const formattedDate = currentDate.toLocaleDateString('en-US');
+
+      // Update the prayer times in the HTML content
+      const dateContent = `
+        <ul>
+          <li>
+            <h2>🌍 City: ${selectedCity}, ${selectedCountry}</h2>
+          </li>
+          <li>
+            <h2>📅 Date: ${formattedDate}</h2>
+          </li>
+          <li>
+            <h2>⌚ Current Time: ${currentTime}</h2>
+          </li>
+        </ul>
+      `;
+      document.getElementById('date').innerHTML = dateContent;
+
+      const prayerTimesContent = `
+        <ul>
+          <li>
+            <h3>Fajr: ${prayerTimes.Fajr}</h3>
+          </li>
+          <li>
+            <h3>Dhuhr: ${prayerTimes.Dhuhr}</h3>
+          </li>
+          <li>
+            <h3>Asr: ${prayerTimes.Asr}</h3>
+          </li>
+          <li>
+            <h3>Maghrib: ${prayerTimes.Maghrib}</h3>
+          </li>
+          <li>
+            <h3>Isha: ${prayerTimes.Isha}</h3>
+          </li>
+        </ul>
+      `;
+      document.getElementById('prayerTimes').innerHTML = prayerTimesContent;
+    })
+    .catch((error) => {
+      console.error('Failed to fetch prayer times:', error);
+    });
+}
+
+const citySelect = document.getElementById('city');
+citySelect.addEventListener('change', function () {
+  const selectedCity = citySelect.value;
+  fetchPrayerTimes(selectedCity);
+});
+
+// Fetch prayer times for the initially selected city
+const initialCity = citySelect.value;
+fetchPrayerTimes(initialCity);
+
+</script>
+  </body>
+</html>
